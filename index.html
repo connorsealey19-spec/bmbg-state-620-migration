@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State 620</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .stage{
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6vh 8vw;
+  }
+
+  .coord{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+
+  .state-number{
+    font-size: clamp(5.5rem, 22vw, 14rem);
+    line-height: 0.85;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .state-number span{
+    color: var(--accent);
+  }
+
+  .rule{
+    width: 100%;
+    max-width: 560px;
+    height: 1px;
+    background: var(--line);
+    margin: 28px 0 26px;
+  }
+
+  .lede{
+    max-width: 540px;
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+
+  .lede strong{ color: var(--accent); font-weight: 600; }
+
+  .sub{
+    max-width: 520px;
+    color: var(--muted);
+    font-size: 0.98rem;
+    margin: 0 0 40px;
+  }
+
+  .actions{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .hint{
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  footer{
+    position: relative;
+    z-index: 1;
+    padding: 22px 8vw 28px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    border-top: 1px solid var(--line-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-field"></div>
+
+<main class="stage">
+  <div class="coord">SECTOR REGISTRY &middot; TRANSFER OFFICE</div>
+
+  <h1 class="state-number display">STATE <span>620</span></h1>
+
+  <div class="rule"></div>
+
+  <p class="lede">Thank you for choosing <strong>State 620</strong> as your new home.</p>
+  <p class="sub">Before you're placed with a clan, we need a few details from you — your current standing, the clan you're hoping to join, and a bit about why you're making the move. It takes about five minutes.</p>
+
+  <div class="actions">
+    <a class="btn" href="request.html">Start transfer request</a>
+    <span class="hint">Have your Game ID and recent bag screenshots ready</span>
+  </div>
+</main>
+
+<footer>
+  <span>State 620</span>
+  <span>Transfer Request &middot; v1</span>
+</footer>
+
+</body>
+</html>
