@@ -1,0 +1,1 @@
+const client = supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY); const form = document.getElementById('migrationForm'); const message = document.getElementById('message'); form.addEventListener('submit', async (e) => { e.preventDefault(); });
